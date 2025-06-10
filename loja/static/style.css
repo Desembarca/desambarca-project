@@ -1,0 +1,512 @@
+body {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho superior estilo Nike */
+.cabecalhoP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 120px;
+    background-color: #101D2B;
+
+}
+
+.logo-topo {
+    width: 100px;
+    height: 120px;
+}
+
+.menu01 .links-topo {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  margin-right: 50px;
+
+}
+
+.links-topo li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.links-topo li a:hover {
+    color:#2280EF;
+}
+
+
+/*Pagina Principal*/
+
+.produtosP{
+     display: flex;
+     font-family: Arial, Helvetica, sans-serif;
+     justify-content: center;
+    align-items: center;
+    gap: 100px;
+   padding-bottom: 190px;
+}
+
+h2{
+    color: rgb(250, 250, 250);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.produtosV{
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 3%;
+  height: 400px;
+  width: 250px;
+  flex-direction: column;
+}
+
+.maisVendido{
+ 
+    height: 300px;
+    width: 200px;
+}
+
+s{
+    color: gray;
+}
+
+span{
+    color: green;
+}
+
+.estrelas{
+    font-size: 20px;
+}
+
+.nota {
+  display: inline-block;
+  background-color: gray; /* amarelo ouro */
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.soreNos{
+    display: flex;
+    color: white;
+     justify-content: center;
+    align-items: center;
+}
+
+.gif{
+    height: 500px;
+    width: 300px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.class{
+    height: 200px;
+    width: 200px;
+ margin: 0 400px;
+}
+
+.paragrafoP{
+text-align: center;
+padding: 10px;
+}
+
+/*PARTE LOGIN*/
+
+.loginP{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+      background-image: url("imagens/plano de fundo.png"); 
+      background-size: cover; /* Faz a imagem cobrir a área toda */
+      background-position: center; 
+      background-repeat: no-repeat; 
+    padding-bottom: 60px;
+}
+
+.principaLogin{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 650px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    margin-top: 100px;
+    
+
+}
+
+input{
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+
+.esqueciS{
+    display: flex;
+    gap: 70px;
+}
+
+
+button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.entrar{
+    background-color: #2280EF;
+    margin-top: 30px;
+}
+
+.criarConta{
+        color: #2280EF;
+    }
+
+    .googleFace{
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    padding: 0;
+    }
+
+    .linha{
+    text-decoration: none;
+    }
+
+    
+
+/* PARTE DE CADASTRO */
+
+.principalCadastro{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url("imagens/plano de fundo.png"); 
+     background-size: cover; /* Faz a imagem cobrir a área toda */
+     background-position: center; 
+     background-repeat: no-repeat; 
+     padding-bottom: 60px;
+}
+
+.cadastroL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 650px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    margin-top: 100px;
+}
+
+.criarContaC{
+    margin-top: 15px;
+    background-color: #2280EF;
+    color: white;
+}
+
+.googleF{
+    background-color: #2280EF;
+    color: white;
+     gap: 15px;
+    height: 50px;
+     
+}
+
+
+.imagemBotao{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.cadastrarrL{
+    font-size: 30px;
+    color: white;
+}
+
+
+/*PRODUTOS*/
+
+.lojaP{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.titulo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+    
+}
+.loja{
+    font-size: 35px;
+    color: white;
+  
+     padding: 40px;
+}
+
+
+
+.paginaP {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.lojaV {
+ cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+ color: white;
+}
+
+
+/*RODAPE*/
+
+.footer {
+  background-color: #1F586D;
+  padding: 30px 10px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+ width: 98.7%;
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+   align-items: center;
+  justify-content: center;
+  gap: 350px;
+
+}
+
+.logo img { 
+   width: 120px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  text-align: left;
+}
+
+.social-media p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.icons a {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #fff;
+}
+
+.ondas{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+/*DESCRIÇÃO DOS PRODUTOS*/
+
+.principalPecas{
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+
+.homeP{
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 150px;
+}
+
+
+
+.mini-carousel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-carousel img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.mini-carousel button {
+    background-color: rgba(30, 30, 30, 0.0);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40px;
+}
+
+.mini-carousel button:hover {
+  background-color: #444;
+}
+
+.descricaoProdutos{
+   
+     height: 500px;
+     width: 500px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     border-radius: 20px;
+     gap: 10px;
+}
+
+.nomeProduto{
+    color: white;
+    font-size: 25px;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/*ACOMPANHAMENTO DO PRODUTO*/
+
+.tracking-container {
+  background-color: #1B1B1B;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  height: calc(100% - 35px);
+  width: 2px;
+  background-color: #444;
+  z-index: 0;
+}
+
+.step-icon {
+  background-color: #444;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+}
+
+.step.completed .step-icon {
+  background-color: #2280EF;
+}
+
+.step-content {
+  margin-left: 20px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.step-time {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.step.current .step-icon {
+  border: 2px solid #2280EF;
+  background-color: transparent;
+  color: #2280EF;
+}
+
+
+
+
