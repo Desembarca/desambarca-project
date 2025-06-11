@@ -9,22 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desembarca</title>
     <link rel="stylesheet" href=" {% static 'style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="responsividade/responsivo.css">
+    <link rel="stylesheet" href=" {% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}">
+    <link rel="stylesheet" href=" {% static '../../static/responsivo.css' %}">
 
 </head>
 <body>
     <!-- Cabeçalho superior -->
     <header class="cabecalhoP">
         <a href="index.html">
-            <img src="{% static 'imagens/Logo Desembarca com Âncora.png' %}" alt="dese" class="logo-topo">
+            <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="logo" class="logo-topo">
         </a>
         <nav class="menu01">
             <ul class="links-topo">
-                <li><a href="acompanhamento.html">Acompanhe seu pedido</a></li>
+                <li><a href="{% url 'acompanhamento' %}">Acompanhe seu pedido</a></li>
                 <li><a href="#">Ajuda</a></li>
-                <li><a href="cadastro.html">Junte-se a nós</a></li>
-                <li><a href="login.html">Entrar</a></li>
+                <li><a href="{% url 'cadastro' %}">Junte-se a nós</a></li>
+                <li><a href="{% url 'login' %}">Entrar</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +33,11 @@
     <main class="principal">
         <section class="soreNos">
             <div class="fotoSobreNos">
-                <img class="gif" src="imagens/video-_1_.gif" alt="">
+                <img class="gif" src= " {% static '../../static/loja/imagens/gif_desembarca.gif' %}" alt="">
             </div>
 
             <div class="SobreP">
-                <img src="imagens/Logo Desembarca com Âncora.png" alt="" class="class">
+                <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="" class="class">
                 <p class="paragrafoP">
                     Na Desembarca, acreditamos que praticar esportes ao ar livre deve ser sinônimo de liberdade, saúde e segurança. Por isso, criamos um e-commerce especializado em roupas com proteção UV, desenvolvidas especialmente para quem vive em movimento e não abre mão de se cuidar.
                 </p>
@@ -57,7 +58,7 @@
         <section class="produtosP">
            <div class="produtosV">
                 <a href="produtos.html">
-                <img src="imagens/Virtualthreads (1).png" alt="" class="maisVendido">
+                <img src=" {% static 'loja/imagens/Virtualthreads (1).png' %}" alt="" class="maisVendido">
                 </a>
                 <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
@@ -66,7 +67,7 @@
 
             <div class="produtosV">
                 <a href="produtos.html">
-                <img src="imagens/Virtualthreads (1).png" alt="" class="maisVendido">
+                <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="" class="maisVendido">
                 </a>
                   <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
@@ -75,7 +76,7 @@
 
                 <div class="produtosV">
                 <a href="produtos.html">
-                <img src="imagens/Virtualthreads (1).png" alt="" class="maisVendido">
+                <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="" class="maisVendido">
                 </a>
                  <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
@@ -84,7 +85,7 @@
 
             <div class="produtosV">
                 <a href="produtos.html">
-                <img src="imagens/Virtualthreads (1).png" alt="" class="maisVendido">
+                <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="" class="maisVendido">
                 </a>
                  <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
@@ -99,7 +100,7 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="logo">
-      <img src="imagens/Logo Desembarca com Âncora.png" alt="Logo Desembarca" />
+      <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="Logo Desembarca" />
     </div>
 
     <nav class="footer-links">
@@ -119,6 +120,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="{% static '../../../../static/script.js' %}"></script>
 </body>
 </html>

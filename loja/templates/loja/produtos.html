@@ -8,28 +8,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desembarca</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}">
 </head>
 <body>
     <!-- Cabeçalho superior -->
     <header class="cabecalhoP">
         <a href="index.html">
-            <img src="imagens/Logo Desembarca com Âncora.png" alt="dese" class="logo-topo">
+            <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="dese" class="logo-topo">
         </a>
         <nav class="menu01">
             <ul class="links-topo">
-                <li><a href="acompanhamento.html">Acompanhe seu pedido</a></li>
+                <li><a href="{% url 'acompanhamento' %}">Acompanhe seu pedido</a></li>
                 <li><a href="#">Ajuda</a></li>
-                <li><a href="cadastro.html">Junte-se a nós</a></li>
-                <li><a href="login.html">Entrar</a></li>
+                <li><a href="{% url 'cadastro' %}">Junte-se a nós</a></li>
+                <li><a href="{% url 'login' %}">Entrar</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="lojaP">
         <div class="titulo">
-            <img src="imagens/Logo Desembarca com Âncora.png" alt="">
+            <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="">
             <h3 class="loja">A LOJA DO MOMENTO</h3>
         </div>
       
@@ -37,7 +38,7 @@
 
     <div class="lojaV">
       <a href="peca.html">
-        <img src="imagens/Virtualthreads (2).png" alt="Notebook gamer" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (2).png' %}" alt="Notebook gamer" class="maisVendido">
         </a>
          <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
@@ -46,35 +47,35 @@
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="Mouse Redragon" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Mouse Redragon" class="maisVendido">
           <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (3).png" alt="Fone gamer" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (3).png' %}" alt="Fone gamer" class="maisVendido">
          <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="Teclado gamer" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Teclado gamer" class="maisVendido">
           <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.6</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="Cadeira gamer" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Cadeira gamer" class="maisVendido">
       <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★★ <span class="nota">5.0</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="Monitor 144Hz" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Monitor 144Hz" class="maisVendido">
         <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.7</span></p>
@@ -82,42 +83,42 @@
 
     <div class="lojaV">
        
-        <img src="imagens/Virtualthreads (1).png" alt="Placa de vídeo RTX" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Placa de vídeo RTX" class="maisVendido">
          <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★★ <span class="nota">4.9</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="Processador Ryzen" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="Processador Ryzen" class="maisVendido">
           <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="SSD 1TB" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="SSD 1TB" class="maisVendido">
         <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="SSD 1TB" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="SSD 1TB" class="maisVendido">
          <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="SSD 1TB" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="SSD 1TB" class="maisVendido">
      <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
     </div>
 
     <div class="lojaV">
-        <img src="imagens/Virtualthreads (1).png" alt="SSD 1TB" class="maisVendido">
+        <img src="{% static 'loja/imagens/Virtualthreads (1).png' %}" alt="SSD 1TB" class="maisVendido">
         <h3>Camisa Oversize Desembarca</h3>
                 <p>R$ 200,99 no Pix <s>220,99</s> <span>10% off</span></p>
         <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
@@ -130,7 +131,7 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="logo">
-      <img src="imagens/Logo Desembarca com Âncora.png" alt="Logo Desembarca" />
+      <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="Logo Desembarca" />
     </div>
 
     <nav class="footer-links">
@@ -150,6 +151,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="{% static '../../../../static/script.js' %}"></script>
 </body>
 </html>

@@ -8,23 +8,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acompanhe seu pedido | Desembarca</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsividade/responsivo.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static '../../static/responsivo.css' %}">
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}">
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header class="cabecalhoP">
     <a href="index.html">
-      <img src="imagens/Logo Desembarca com Âncora.png" alt="Logo Desembarca" class="logo-topo">
+      <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="Logo Desembarca" class="logo-topo">
     </a>
     <nav class="menu01">
       <ul class="links-topo">
-        <li><a href="acompanhamento.html">Acompanhe seu pedido</a></li>
+        <li><a href="{% url 'acompanhamento' %}">Acompanhe seu pedido</a></li>
         <li><a href="#">Ajuda</a></li>
-        <li><a href="cadastro.html">Junte-se a nós</a></li>
-        <li><a href="login.html">Entrar</a></li>
+        <li><a href="{% url 'cadastro' %}">Junte-se a nós</a></li>
+        <li><a href="{% url 'login' %}">Entrar</a></li>
+        <li><a href="{% url 'index' %}">Home</a></li>
       </ul>
     </nav>
   </header>
@@ -38,7 +39,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="logo">
-        <img src="imagens/Logo Desembarca com Âncora.png" alt="Logo Desembarca" />
+        <img src="{% static 'loja/imagens/logo_desembarca_ancora.png' %}" alt="Logo Desembarca" />
       </div>
       <nav class="footer-links">
         <a href="#sobre">Sobre a Desembarca</a>
@@ -56,7 +57,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src=" {% static '../../../../static/script.js' %} "></script>
   <script src="acompanhamento.js"></script>
 </body>
 </html>

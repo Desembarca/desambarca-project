@@ -1,0 +1,86 @@
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 768px) {
+
+  .cabecalhoP {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .menu01 .links-topo {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .soreNos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotoNos, .class {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .produtosP, .googleFace {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .paginaP {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-links, .social-media {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .cadastroL, .principaLogin {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  .logo-topo {
+    width: 60px;
+  }
+
+  .lojaV {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .paginaP {
+    grid-template-columns: 1fr;
+  }
+
+  .esqueciS {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer {
+    padding: 20px 5px;
+  }
+}
