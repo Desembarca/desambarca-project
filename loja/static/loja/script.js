@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
+
 
   // --- BOTÃO VOLTAR AO TOPO ---
   const botaoTopo = document.createElement("button");
@@ -112,26 +112,58 @@ function prevImage() {
 }
 
  // --- PARTE DE ACOMPANHAMENTO ---
-const etapas = [
-  { titulo: "Pedido Recebido", horario: "02/06/2025 10:21", status: "completed", icone: "fa-check" },
-  { titulo: "Em Separação", horario: "02/06/2025 11:00", status: "completed", icone: "fa-check" },
-  { titulo: "Em Transporte", horario: "02/06/2025 14:15", status: "current", icone: "fa-truck" },
-  { titulo: "Saiu para Entrega", horario: "--/--", status: "", icone: "fa-box" },
-  { titulo: "Entregue", horario: "--/--", status: "", icone: "fa-home" },
-];
+window.onload = () => {
+    const etapas = [
+        {
+            titulo: "Pedido Recebido",
+            horario: "02/06/2025 10:21",
+            status: "completed",
+            icone: "fa-check",
+        },
+        {
+            titulo: "Em Separação",
+            horario: "02/06/2025 11:00",
+            status: "completed",
+            icone: "fa-check",
+        },
+        {
+            titulo: "Em Transporte",
+            horario: "02/06/2025 14:15",
+            status: "current",
+            icone: "fa-truck",
+        },
+        {
+            titulo: "Saiu para Entrega",
+            horario: "--/--",
+            status: "",
+            icone: "fa-box",
+        },
+        { titulo: "Entregue", horario: "--/--", status: "", icone: "fa-home" },
+    ];
 
-const container = document.getElementById("tracking");
 
-etapas.forEach(etapa => {
-  const div = document.createElement("div");
-  div.className = `step ${etapa.status}`;
+    // --- PARTE DE ACOMPANHAMENTO ---
+    const etapas = [
+        { titulo: "Pedido Recebido", horario: "02/06/2025 10:21", status: "completed", icone: "fa-check" },
+        { titulo: "Em Separação", horario: "02/06/2025 11:00", status: "completed", icone: "fa-check" },
+        { titulo: "Em Transporte", horario: "02/06/2025 14:15", status: "current", icone: "fa-truck" },
+        { titulo: "Saiu para Entrega", horario: "--/--", status: "", icone: "fa-box" },
+        { titulo: "Entregue", horario: "--/--", status: "", icone: "fa-home" },
+    ];
 
-  div.innerHTML = `
+    const container = document.getElementById("tracking");
+
+    etapas.forEach(etapa => {
+        const div = document.createElement("div");
+        div.className = `step ${etapa.status}`;
+
+        div.innerHTML = `
     <div class="step-icon"><i class="fas ${etapa.icone}"></i></div>
     <div class="step-content">
       <div class="step-title">${etapa.titulo}</div>
       <div class="step-time">${etapa.horario}</div>
     </div>
   `;
-  container.appendChild(div);
-});
+        container.appendChild(div);
+    });
+}

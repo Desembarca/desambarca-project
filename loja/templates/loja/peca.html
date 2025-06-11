@@ -1,6 +1,4 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'loja/style.css' %}">
-<script src="{% static 'loja/script.js' %}"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desembarca</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}>
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}"
+    integrity="sha512-m7IrkHDjD38BfR2EzUONCqK+XepRkMN+OjQ8biFnYqHzZQHqxuxhBgvkl1uw+nKMaTn7S5n9EZyB7F+55x9Zjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static '../../static/responsivo.css' %}">
 
 </head>
@@ -29,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main class="principalPecas">
         <section class="homeP">
            <div class="mini-carousel">
@@ -63,13 +63,13 @@
         showImage(currentImageIndex);
     }
 </script>
-  
+
 
             <div class="descricaoProdutos">
                 <h3 class="nomeProduto">CAMISA OVERSIZE DESEMBARCA</h3>
             <p class="estrelas">★★★★ <span class="nota">4.8</span></p>
-              <p>R$ 199,99 no Pix <s>219,99</s> <span>10% off</span></p>  
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto veniam illo dicta saepe consequatur doloribus eligendi maiores cumque, dolore libero vel pariatur aut dolorum sequi natus ducimus, molestiae sunt amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta vero officiis eveniet, sed voluptate ad laborum, sit quis beatae commodi blanditiis sint exercitationem? Possimus soluta quibusdam neque accusantium aliquid?</p>  
+              <p>R$ 199,99 no Pix <s>219,99</s> <span>10% off</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto veniam illo dicta saepe consequatur doloribus eligendi maiores cumque, dolore libero vel pariatur aut dolorum sequi natus ducimus, molestiae sunt amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dicta vero officiis eveniet, sed voluptate ad laborum, sit quis beatae commodi blanditiis sint exercitationem? Possimus soluta quibusdam neque accusantium aliquid?</p>
             </div>
         </section>
     </main>

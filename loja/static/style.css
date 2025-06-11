@@ -70,7 +70,7 @@ h2{
 }
 
 .maisVendido{
- 
+
     height: 300px;
     width: 200px;
 }
@@ -129,10 +129,10 @@ padding: 10px;
     display: flex;
    justify-content: center;
     align-items: center;
-      background-image: url("imagens/plano de fundo.png"); 
+      background-image: url("loja/imagens/plano_de_fundo.png");
       background-size: cover; /* Faz a imagem cobrir a área toda */
-      background-position: center; 
-      background-repeat: no-repeat; 
+      background-position: center;
+      background-repeat: no-repeat;
     padding-bottom: 60px;
 }
 
@@ -146,7 +146,7 @@ padding: 10px;
     background-color: rgba(30, 30, 30, 0.7);
     border-radius: 15px;
     margin-top: 100px;
-    
+
 
 }
 
@@ -196,7 +196,7 @@ button{
     text-decoration: none;
     }
 
-    
+
 
 /* PARTE DE CADASTRO */
 
@@ -204,10 +204,10 @@ button{
      display: flex;
      justify-content: center;
      align-items: center;
-     background-image: url("imagens/plano de fundo.png"); 
+     background-image: url("loja/imagens/plano_de_fundo.png");
      background-size: cover; /* Faz a imagem cobrir a área toda */
-     background-position: center; 
-     background-repeat: no-repeat; 
+     background-position: center;
+     background-repeat: no-repeat;
      padding-bottom: 60px;
 }
 
@@ -234,7 +234,7 @@ button{
     color: white;
      gap: 15px;
     height: 50px;
-     
+
 }
 
 
@@ -262,19 +262,19 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-   
+
 }
 
 img{
     height: 200px;
     width: 200px;
     margin-top: 40px;
-    
+
 }
 .loja{
     font-size: 35px;
     color: white;
-  
+
      padding: 40px;
 }
 
@@ -318,7 +318,7 @@ img{
 
 }
 
-.logo img { 
+.logo img {
    width: 120px;
   height: auto;
 }
@@ -413,7 +413,7 @@ img{
 }
 
 .descricaoProdutos{
-   
+
      height: 500px;
      width: 500px;
      align-items: center;
@@ -506,6 +506,7 @@ p{
   background-color: transparent;
   color: #2280EF;
 }
+
 
 
 

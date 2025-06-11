@@ -1,16 +1,17 @@
-{% load static %}
-<link rel="stylesheet" href="{% static 'loja/style.css' %}">
-<script src="{% static 'loja/script.js' %}"></script>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    {% load static %}
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acompanhe seu pedido | Desembarca</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static '../../static/responsivo.css' %}">
-  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' %}">
+<link rel="stylesheet" href="{% static 'loja/responsivo.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-m7IrkHDjD38BfR2EzUONCqK+XepRkMN+OjQ8biFnYqHzZQHqxuxhBgvkl1uw+nKMaTn7S5n9EZyB7F+55x9Zjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -33,7 +34,7 @@
   <!-- Acompanhamento de Pedido -->
   <div class="tracking-container" id="tracking">
     <!-- Etapas são inseridas dinamicamente com JS -->
-  </div>
+</div>
 
   <!-- Rodapé -->
   <footer class="footer">
@@ -57,7 +58,7 @@
     </div>
   </footer>
 
-  <script src=" {% static '../../../../static/script.js' %} "></script>
-  <script src="acompanhamento.js"></script>
+<script src="{% static 'loja/script.js' %}"></script>
+<!-- <script src="acompanhamento.js"></script> -->
 </body>
 </html>
