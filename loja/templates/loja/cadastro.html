@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!-- Cabeçalho superior -->
     <header class="cabecalhoP">
         <a href="index.html">
@@ -19,11 +20,13 @@
         </a>
         <nav class="menu01">
             <ul class="links-topo">
-                <li><a href="{% url 'acompanhamento' %}">Acompanhe seu pedido</a></li>
+                
         <li><a href="#">Ajuda</a></li>
+        <li><a href="{% url 'index' %}">Home</a></li>
         <li><a href="{% url 'cadastro' %}">Junte-se a nós</a></li>
         <li><a href="{% url 'login' %}">Entrar</a></li>
-        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'produtos' %}">Produtos</a></li>
+        <li><a href="{% url 'peca' %}">Peças Promocionais</a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +35,16 @@
         <section class="cadastroL">
             <h3 class="cadastrarrL">Cadastrar</h3>
 
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" name="" id="" placeholder="Senha">
-            <input type="password" name="" id="" placeholder="Confirme Senha">
-            <input type="text" name="" id="" placeholder="Nome">
-
+             <div class="form-container">
+                <form method="POST">
+                  {% csrf_token %}
+                  <input type="text" name="nome" placeholder="Nome de usuário" required>
+                  <input type="email" name="email" placeholder="Email" required>
+                  <input type="password" name="senha" placeholder="Senha" required>
+                  <button type="submit">Cadastrar</button>
+                </form>
+              </div>
+              
             <div class="esqueciS">
                 <a href="">Manter o login</a>
                 <a href="">Esqueceu a senha?</a>

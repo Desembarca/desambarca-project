@@ -250,6 +250,24 @@ button{
     color: white;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  padding: 30px;
+  border-radius: 8px;
+  gap: 15px;
+  width: 320px;
+}
+
+
 
 /*PRODUTOS*/
 

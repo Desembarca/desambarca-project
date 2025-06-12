@@ -13,6 +13,9 @@
      
 </head>
 <body>
+
+
+  
     <!-- Cabeçalho superior -->
     <header class="cabecalhoP">
         <a href="index.html">
@@ -20,11 +23,12 @@
         </a>
         <nav class="menu01">
             <ul class="links-topo">
-                <li><a href="{% url 'acompanhamento' %}">Acompanhe seu pedido</a></li>
                 <li><a href="#">Ajuda</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="{% url 'cadastro' %}">Junte-se a nós</a></li>
                 <li><a href="{% url 'login' %}">Entrar</a></li>
-               <li><a href="{% url 'index' %}">Home</a></li>
+               <li><a href="{% url 'produtos' %}">Produtos</a></li>
+                <li><a href="{% url 'peca' %}">Peças Promocionais</a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +37,20 @@
         <section class="principaLogin">
             <h3 class="cadastrarrL">Entrar</h3>
 
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" name="" id="" placeholder="Senha">
+            <form method="POST">
+    {% csrf_token %}
+    <input type="text" name="nome" placeholder="Nome de usuário" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+  </form>
+
+  {% if messages %}
+    <ul>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
             <div class="esqueciS">
                 <a href="">Manter o login</a>
@@ -42,9 +58,8 @@
             </div>
 
             <div class="butao">
-                <button class="entrar">Entrar</button>
 
-                <a class="linha" href="cadastro.html">
+                <a class="linha" href="{% url 'cadastro' %}">
                 <button class="criarConta">Criar conta</button>
                 </a>
 
