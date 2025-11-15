@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-
+    agent {
+        docker {
+            image 'python:5.7.2-slim'
     stages {
 
         stage('Instalar dependências') {
