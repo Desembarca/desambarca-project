@@ -3,18 +3,12 @@ pipeline {
 
     stages {
 
-        stage('Clonar projeto') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/Paulo-FelixP/desambarca-project'
-            }
-        }
-
         stage('Instalar dependências') {
             steps {
                 sh '''
                     python3 -m venv venv
-                    source venv/bin/activate
+                    . venv/bin/activate
+                    pip install --upgrade pip
                     pip install -r requirements.txt
                 '''
             }
@@ -23,7 +17,7 @@ pipeline {
         stage('Rodar testes Django') {
             steps {
                 sh '''
-                    source venv/bin/activate
+                    . venv/bin/activate
                     python manage.py test
                 '''
             }
