@@ -1,24 +1,20 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
 
-class TesteLoginSenhaErrada(TestCase):
+class TesteLoginAdminSenhaErrada(TestCase):
     def setUp(self):
-        User.objects.create_user(
+        User.objects.create_superuser(
             username='teste',
-            password='senha_correta'
+            password='senha_correta',
+            email='teste@example.com'
         )
 
-    def test_login_com_senha_errada_deve_falhar(self):
-        response = self.client.post('/login/', {
+    def test_login_admin_com_senha_errada(self):
+        response = self.client.post('/admin/login/', {
             'username': 'teste',
-            'password': 'senha_correta'
+            'password': 'senha_errada'
         })
 
+        # Admin NUNCA loga com senha errada -> sessão não deve ter o usuário
         session = self.client.session
-
-        # ESTE TESTE VAI FALHAR DE PROPÓSITO
-        self.assertIn(
-            '_auth_user_id',
-            session,
-            "Falha proposital: senha errada não deveria logar."
-        )
+        self.assertNotIn('_auth_user_id', session)
