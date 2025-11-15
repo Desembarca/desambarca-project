@@ -1,12 +1,7 @@
 pipeline {
-    agent {
-        docker {
-            image 'python:3.11-slim' 
-        }
-    }
+    agent any
 
     stages {
-
         stage('Instalar dependências') {
             steps {
                 sh '''
@@ -26,6 +21,5 @@ pipeline {
                 '''
             }
         }
-
     }
 }
