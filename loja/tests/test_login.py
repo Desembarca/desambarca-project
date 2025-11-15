@@ -1,26 +1,24 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
 
-class TesteLoginQueDeveFalhar(TestCase):
+class TesteLoginAdmin(TestCase):
     def setUp(self):
         User.objects.create_user(
             username='teste',
             password='senha_correta'
         )
 
-    def test_login_deve_funcionar(self):
-        # Aqui você testa usando senha ERRADA de propósito
-        response = self.client.post('/admin/login/', {
+    def test_login_admin(self):
+        response = self.client.post('/admin/login/?next=/admin/', {
             'username': 'teste',
             'password': 'senha_correta'
         })
 
-        # Pega a sessão após a tentativa de login
+        # Verifica a sessão
         session = self.client.session
 
-        # O teste espera que o login funcione (MAS NÃO VAI FUNCIONAR)
         self.assertIn(
-            '_auth_user_id',
+            '_auth_user_id', 
             session,
-            'O login deveria funcionar, mas falhou.'
+            'Login deveria ter funcionado, mas não funcionou.'
         )
