@@ -1,14 +1,14 @@
 pipeline {
     agent any
 
-    stage('Clonar projeto') {
-    steps {
-        git branch: 'main',
-            credentialsId: 'github-token',
-            url: 'https://github.com/Paulo-FelixP/desambarca-project'
+    stages {
+
+        stage('Clonar projeto') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/Paulo-FelixP/desambarca-project'
+            }
         }
-    
-    }
 
         stage('Instalar dependências') {
             steps {
@@ -24,8 +24,10 @@ pipeline {
             steps {
                 sh '''
                     source venv/bin/activate
-                    python manage.py test loja
+                    python manage.py test
                 '''
             }
         }
+
     }
+}
