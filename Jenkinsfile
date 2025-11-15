@@ -1,13 +1,14 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clonar projeto') {
-            steps {
-                // Quando você usa Jenkinsfile, o Jenkins já clona o repo
-                echo 'Código já clonado automaticamente.'
-            }
+    stage('Clonar projeto') {
+    steps {
+        git branch: 'main',
+            credentialsId: 'github-token',
+            url: 'https://github.com/Paulo-FelixP/desambarca-project.git'
         }
+    
+    }
 
         stage('Instalar dependências') {
             steps {
