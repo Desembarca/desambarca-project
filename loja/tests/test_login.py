@@ -12,7 +12,7 @@ class TesteLoginQueDeveFalhar(TestCase):
         # Aqui você testa usando senha ERRADA de propósito
         response = self.client.post('/admin/login/', {
             'username': 'teste',
-            'password': 'senha_errada'
+            'password': 'senha_correta'
         })
 
         # Pega a sessão após a tentativa de login
