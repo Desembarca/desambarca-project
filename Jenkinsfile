@@ -1,7 +1,10 @@
 pipeline {
     agent {
         docker {
-            image 'python:5.7.2-slim'
+            image 'python:3.11-slim' 
+        }
+    }
+
     stages {
 
         stage('Instalar dependências') {
