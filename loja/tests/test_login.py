@@ -17,7 +17,7 @@ class TesteLoginSenhaErrada(TestCase):
             reverse('login'),
             {
                 'username': 'teste',
-                'password': 'senha_errada'
+                'password': 'senha_correta'
             }
         )
 
