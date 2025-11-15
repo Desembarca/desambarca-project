@@ -14,7 +14,7 @@ class TesteLoginAdmin(TestCase):
         # aqui propositalmente usamos a senha ERRADA
         response = self.client.post('/admin/login/?next=/admin/', {
             'username': 'teste',
-            'password': 'senha_errada'   # senha errada proposital
+            'password': 'senha_correta'   # senha errada proposital
         })
 
         # o teste espera que o login funcione (MAS NÃO VAI FUNCIONAR)
