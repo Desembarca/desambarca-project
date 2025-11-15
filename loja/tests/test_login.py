@@ -15,4 +15,10 @@ class TesteLoginSenhaErrada(TestCase):
         })
 
         session = self.client.session
-        self.assertNotIn('_auth_user_id', session)
+
+        # ESTE TESTE VAI FALHAR DE PROPÓSITO
+        self.assertIn(
+            '_auth_user_id',
+            session,
+            "Falha proposital: senha errada não deveria logar."
+        )
