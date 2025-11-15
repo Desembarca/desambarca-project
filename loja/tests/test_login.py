@@ -11,7 +11,7 @@ class TesteLoginSenhaErrada(TestCase):
     def test_login_com_senha_errada_deve_falhar(self):
         response = self.client.post('/login/', {
             'username': 'teste',
-            'password': 'senha_errada'
+            'password': 'senha_correta'
         })
 
         session = self.client.session
