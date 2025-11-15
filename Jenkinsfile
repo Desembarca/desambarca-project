@@ -5,7 +5,7 @@ pipeline {
     steps {
         git branch: 'main',
             credentialsId: 'github-token',
-            url: 'https://github.com/Paulo-FelixP/desambarca-project.git'
+            url: 'https://github.com/Paulo-FelixP/desambarca-project'
         }
     
     }
