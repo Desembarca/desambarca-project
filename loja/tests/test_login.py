@@ -10,7 +10,7 @@ class TesteLoginAdmin(TestCase):
             password='senha_correta'
         )
 
-    def test_login_admin_deve_funcionar(self):
+    def test_login(self):
         
         response = self.client.post('/admin/login/?next=/admin/', {
             'username': 'teste',
