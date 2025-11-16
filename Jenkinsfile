@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage('Rodar testes Django') {
+        stage('testes') {
             steps {
                 sh '''
                     . venv/bin/activate
