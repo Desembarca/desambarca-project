@@ -14,7 +14,7 @@ class TesteLoginAdmin(TestCase):
         
         response = self.client.post('/admin/login/?next=/admin/', {
             'username': 'teste',
-            'password': 'senha_brasil'   
+            'password': 'senha_correta  '   
         })
 
         
